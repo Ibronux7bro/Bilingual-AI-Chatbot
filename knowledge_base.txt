@@ -1,0 +1,45 @@
+# قاعدة المعرفة واللوائح الأكاديمية - Samer AI (Bilingual / ثنائي اللغة)
+
+## 1. القواعد باللغة العربية (Arabic Rules)
+1. **فترة التسجيل (Registration Period):** تبدأ قبل أسبوعين من الفصل الدراسي.
+2. **الحذف والإضافة (Add/Drop):** تعديل الجدول في الأسبوع الأول دون تأثير على المعدل.
+3. **الانسحاب بتقدير W (Withdrawal):** انسحاب من مادة حتى الأسبوع الثامن، لا يدخل في المعدل.
+4. **الاعتذار عن الفصل (Semester Deferral):** إيقاف الدراسة لفصل كامل بعذر مقبول.
+5. **تأجيل القبول (Admission Deferral):** تأجيل بدء الدراسة لفصل واحد أو فصلين.
+6. **الحد الأدنى للساعات (Min credits):** 12 ساعة معتمدة للفصل الواحد.
+7. **الحد الأقصى للساعات (Max credits):** 18 ساعة عادي، 21 ساعة للمتفوقين.
+8. **المعدل التراكمي (GPA):** مجموع نقاط المواد مقسوماً على مجموع الساعات.
+9. **الإنذار الأكاديمي (Academic Warning):** تنبيه إذا قل المعدل التراكمي عن 2.0.
+10. **الحرمان (Denial):** المنع من الاختبار النهائي إذا غاب الطالب 25%.
+11. **غير مكتمل (Incomplete - I):** لعذر قهري منع الطالب من حضور الاختبار النهائي.
+12. **تقدير راسب (F):** عند الرسوب في المادة أو الغياب بدون عذر.
+13. **درجة النجاح (Passing Grade):** عادة تكون 60 درجة من 100.
+14. **التظلم (Grade Appeal):** مراجعة ورقة الاختبار خلال أسبوع من النتيجة.
+15. **لائحة الغش (Cheating):** تؤدي لتحويل الطالب للجنة التأديب وقد يفصل.
+16. **متطلبات التخرج (Graduation):** إكمال الخطة ومعدل لا يقل عن 2.0.
+17. **مرتبة الشرف الأولى (First Class Honors):** معدل بين 3.90 و 4.00.
+18. **مرتبة الشرف الثانية (Second Class Honors):** معدل بين 3.75 و 3.89.
+19. **الساعات المكتبية (Office Hours):** أوقات مخصصة لمقابلة الأستاذ في مكتبه.
+20. **التحويل (Transfer):** متاح بعد الفصل الأول بناءً على شروط المعدل.
+
+## 2. قواعد باللغة الإنجليزية (English Rules)
+1. **Registration Period:** Starts two weeks before the semester begins.
+2. **Add/Drop:** Modifying the schedule in the first week without affecting GPA.
+3. **Withdrawal (W):** Possible until the 8th week; it doesn't affect GPA.
+4. **Academic Warning:** Issued if the cumulative GPA falls below 2.0.
+5. **Denial (DN):** Prohibited from final exam if absences exceed 25%.
+6. **Minimum Credits:** 12 credit hours per semester.
+7. **Maximum Credits:** 18 standard, 21 for high-achievers.
+8. **GPA Calculation:** Total points divided by total credit hours.
+9. **Incomplete (I):** For students missing final exams due to valid excuses.
+10. **Semester Deferral:** Stopping studies for a full semester with a valid reason.
+11. **Admission Deferral:** Delaying entry for one or two semesters.
+12. **Failing Grade (F):** If a student fails or misses the exam without excuse.
+13. **Passing Grade:** Generally 60 out of 100 in most courses.
+14. **Grade Appeal:** Reviewing exam papers within one week of results.
+15. **Cheating Policy:** Results in disciplinary action or expulsion.
+16. **Graduation Requirements:** Completing the plan with at least a 2.0 GPA.
+17. **First Class Honors:** GPA between 3.90 and 4.00.
+18. **Second Class Honors:** GPA between 3.75 and 3.89.
+19. **Office Hours:** Dedicated times to meet professors in their offices.
+20. **Transferring Majors:** Available after the first semester based on GPA.

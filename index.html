@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Academic Advisor - Your smart companion for educational guidance.">
+    <title>Samer | المستشار الأكاديمي الذكي</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="rtl">
+    <div class="background-overlay"></div>
+    <div class="glow-container">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+    
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo-section">
+                <img src="logo.png" alt="Samer AI Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>Samer AI</h1>
+                    <p>Academic Advisor</p>
+                </div>
+            </div>
+            
+            <nav class="side-nav">
+                <div class="nav-item active">
+                    <i class="fas fa-comment-dots"></i>
+                    <span id="navChat">المحادثة المباشرة</span>
+                </div>
+                <div class="nav-item" title="Coming Soon">
+                    <i class="fas fa-book"></i>
+                    <span id="navKb">قاعدة المعرفة</span>
+                </div>
+            </nav>
+
+            <div class="lang-selector">
+                <p>اللغة / Language</p>
+                <div class="toggle-group">
+                    <button id="arBtn" class="active">العربية</button>
+                    <button id="enBtn">English</button>
+                </div>
+            </div>
+            
+            <footer class="sidebar-footer">
+                <p>&copy; 2026 AI Project</p>
+            </footer>
+        </aside>
+
+        <main class="chat-wrapper">
+            <header class="chat-header">
+                <div class="advisor-info">
+                    <div class="status-indicator"></div>
+                    <div class="names">
+                        <h2 id="headerTitle">المستشار سامر</h2>
+                        <span id="headerStatus">متصل الآن</span>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button class="icon-btn"><i class="fas fa-ellipsis-v"></i></button>
+                </div>
+            </header>
+
+            <div class="chat-content" id="chatContainer">
+                <div class="chat-date">اليوم</div>
+                <div class="message ai-bubble">
+                    <div class="avatar">S</div>
+                    <div class="bubble-content">
+                        <p class="ar-text">مرحباً بك! أنا "سامر"، مستشارك الأكاديمي الذكي. كيف يمكنني مساعدتك برحلتك التعليمية اليوم؟</p>
+                        <p class="en-text" style="display: none;">Welcome! I am "Samer", your AI Academic Advisor. How can I assist you with your educational journey today?</p>
+                        <div class="bubble-footer">
+                            <button class="bubble-speak" onclick="playVoice(currentLang === 'ar-SA' ? 'مرحباً بك! أنا سامر، مستشارك الأكاديمي الذكي. كيف يمكنني مساعدتك برحلتك التعليمية اليوم؟' : 'Welcome! I am Samer, your AI Academic Advisor. How can I assist you with your educational journey today?')"><i class="fas fa-volume-up"></i></button>
+                            <span class="time">01:43 AM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="typing-indicator" id="typingIndicator" style="display: none;">
+                <span></span><span></span><span></span>
+                <p>سامر يفكر...</p>
+            </div>
+
+            <section class="interaction-center">
+                <div class="visualizer">
+                    <div class="orb" id="orb">
+                        <div class="orb-core"></div>
+                        <div class="orb-ring"></div>
+                    </div>
+                </div>
+                <p id="statusTxt">انقر على الميكروفون للتحدث</p>
+            </section>
+
+            <footer class="chat-input-section">
+                <div class="input-container">
+                    <button id="micBtn" class="mic-btn" title="تحدث">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <input type="text" id="manualInput" placeholder="اكتب سؤالك هنا..." autocomplete="off">
+                    <button id="sendBtn" class="send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
