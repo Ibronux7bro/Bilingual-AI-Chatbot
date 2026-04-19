@@ -35,11 +35,11 @@
             </div>
             
             <nav class="side-nav">
-                <div class="nav-item active">
+                <div class="nav-item active" id="navBtnChat" onclick="switchView('chat')">
                     <i class="fas fa-comment-dots"></i>
                     <span id="navChat">المحادثة المباشرة</span>
                 </div>
-                <div class="nav-item" title="Coming Soon">
+                <div class="nav-item" id="navBtnKb" onclick="switchView('kb')">
                     <i class="fas fa-book"></i>
                     <span id="navKb">قاعدة المعرفة</span>
                 </div>
@@ -72,6 +72,17 @@
                 </div>
             </header>
 
+            <!-- Knowledge Base View -->
+            <div class="kb-container" id="kbView" style="display: none;">
+                <div class="kb-header-title">
+                    <h2>📚 قاعدة المعرفة الجامعية</h2>
+                    <p>جميع حقوق الطالب، اللوائح، والخدمات المسجلة في النظام.</p>
+                </div>
+                <div class="kb-body" id="kbContentBody">
+                    جاري التحميل...
+                </div>
+            </div>
+
             <div class="chat-content" id="chatContainer">
                 <div class="chat-date">اليوم</div>
                 <div class="message ai-bubble">
@@ -103,6 +114,12 @@
             </section>
 
             <footer class="chat-input-section">
+                <div class="quick-actions" id="quickActions">
+                    <button class="action-btn" onclick="triggerService('احسب معدلي المحتمل هذا الفصل')">احسب معدلي 🧮</button>
+                    <button class="action-btn" onclick="triggerService('أريد حجز موعد مع مرشد أكاديمي')">حجز موعد 📅</button>
+                    <button class="action-btn" onclick="triggerService('ما هي المكافآت المالية ولوائح السكن؟')">مكافآت وسكن 🏠</button>
+                    <button class="action-btn" onclick="triggerService('أواجه مشكلة تقنية، أريد فتح تذكرة دعم')">دعم فني 🛠️</button>
+                </div>
                 <div class="input-container">
                     <button id="micBtn" class="mic-btn" title="تحدث">
                         <i class="fas fa-microphone"></i>

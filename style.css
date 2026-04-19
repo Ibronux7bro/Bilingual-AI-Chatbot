@@ -395,6 +395,40 @@ body.rtl .user-bubble { flex-direction: row; }
 
 #statusTxt { font-size: 0.8rem; color: var(--text-dim); }
 
+/* Quick Actions */
+.quick-actions {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    scrollbar-width: thin;
+}
+
+.quick-actions::-webkit-scrollbar {
+    height: 4px;
+}
+
+.action-btn {
+    background: rgba(45, 212, 191, 0.1);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: var(--transition);
+}
+
+.action-btn:hover {
+    background: var(--primary);
+    color: var(--bg-darker);
+    box-shadow: 0 0 15px var(--primary-glow);
+}
+
 /* Input Section */
 .chat-input-section {
     padding: 1.5rem 2rem;
@@ -463,4 +497,37 @@ body.rtl .user-bubble { flex-direction: row; }
     .sidebar { position: fixed; transform: translateX(100%); z-index: 100; }
     body.rtl .sidebar { transform: translateX(100%); }
     /* Logic to show sidebar would go here */
+}
+
+/* Knowledge Base View */
+.kb-container {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    animation: slideUp 0.4s ease-out;
+}
+
+.kb-header-title {
+    text-align: center;
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid var(--glass-border);
+}
+
+.kb-header-title h2 { color: var(--primary); margin-bottom: 0.5rem; }
+.kb-header-title p { color: var(--text-dim); font-size: 0.9rem; }
+
+.kb-body {
+    background: rgba(15, 23, 42, 0.4);
+    padding: 2rem;
+    border-radius: 16px;
+    line-height: 2.2;
+    font-size: 0.95rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    white-space: pre-wrap;
+    color: var(--text-main);
 }

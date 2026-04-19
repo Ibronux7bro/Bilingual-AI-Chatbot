@@ -44,7 +44,9 @@ def chat():
         "2. If a user asks about ANY OTHER TOPIC, you MUST politely decline.\n"
         "3. Maintain a scholarly tone and prioritize Knowledge Base facts.\n"
         "4. Always respond in the same language as the user.\n"
-        "5. IMPORTANT: When responding in Arabic, YOU MUST FULLY DIACRITIZE (تشكيل كامل بالفتحة والضمة والكسرة) every single word in your response to ensure accurate Text-To-Speech pronunciation."
+        "5. IMPORTANT: When responding in Arabic, YOU MUST FULLY DIACRITIZE (تشكيل كامل بالفتحة والضمة والكسرة) every single word in your response to ensure accurate Text-To-Speech pronunciation.\n"
+        "\nINTERACTIVE SERVICES MOCKING:\n"
+        "If a user asks for a service like calculating GPA (حساب المعدل), booking an appointment (حجز موعد), or opening a support ticket (فتح تذكرة دعم فني), you must act as an interactive agent. Ask them for the required details one by one (e.g. Student ID, courses, problem description). Once they provide the info, simulate the process and tell them it was successfully done."
     )
     prompt = f"{system_instructions}\n\nUser Question: {user_input}\nAdvisor Samer's Response:"
 

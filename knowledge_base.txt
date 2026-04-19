@@ -21,6 +21,16 @@
 18. **مرتبة الشرف الثانية (Second Class Honors):** مُعَدَّلٌ بَيْنَ 3.75 وَ 3.89.
 19. **الساعات المكتبية (Office Hours):** أَوْقَاتٌ مُخَصَّصَةٌ لِمُقَابَلَةِ الأُسْتَاذِ فِي مَكْتَبِهِ.
 20. **التحويل (Transfer):** مُتَاحٌ بَعْدَ الفَصْلِ الأَوَّلِ بِنَاءً عَلَى شُرُوطِ المُعَدَّلِ.
+21. **المكافآت والمساعدات المالية (Financial Aid):** تُصْرَفُ مُكَافَأَةٌ شَهْرِيَّةٌ لِلطَّالِبِ المُسْتَمِرِّ بِمُعَدَّلٍ يَتَجَاوَزُ 2.0، وَيُمْكِنُ التَّقَدُّمُ لِسُلْفَةٍ طَارِئَةٍ.
+22. **السكن الجامعي (Student Housing):** مُتَاحٌ لِلْطُّلَّابِ مِنْ خَارِجِ المَدِينَةِ بِنَاءً عَلَى تَوَفُّرِ الشَّوَاغِرِ الدَّاخِلِيَّةِ.
+23. **البطاقة الجامعية (University ID):** إِلْزَامِيَّةٌ لِدُخُولِ الحَرَمِ، وَيُطْلَبُ بَدَلُ فَاقِدٍ عَبْرَ عِمَادَةِ شُؤُونِ الطُّلَّابِ مُقَابِلَ رُسُومٍ رَمْزِيَّةٍ.
+24. **الأعذار الطبية (Medical Excuses):** تُقْبَلُ فَقَطْ مِنَ العِيَادَةِ الجَامِعِيَّةِ أَوْ مُسْتَشْفَىً حُكُومِيٍّ خِلَالَ 3 أَيَّامٍ مِنَ الغِيَابِ.
+25. **الأنشطة والأندية (Student Clubs):** التَّسْجِيلُ فِي الأَنْدِيَةِ الثَّقَافِيَّةِ وَالرِّيَاضِيَّةِ مُتَاحٌ بِبِدَايَةِ كُلِّ فَصْلٍ عَبْرَ البَوَّابَةِ.
+26. **ذوي الاحتياجات الخاصة (Special Needs):** تَوْفِيرُ لِجَانٍ خَاصَّةٍ وَوَقْتٍ إِضَافِيٍّ فِي الاِخْتِبَارَاتِ بِمُوجِبِ تَقْرِيرٍ طِبِّيٍّ مُعْتَمَدٍ.
+27. **المكتبة المركزية (Central Library):** يُسْمَحُ بِاسْتِعَارَةِ 5 كُتُبٍ لِمُدَّةِ أُسْبُوعَيْنِ لِطُلَّابِ البَكَالُورِيُوس.
+28. **النقل الجامعي (University Transport):** حَافِلَاتٌ مَجَّانِيَّةٌ تَنْطَلِقُ عَلَى رَأْسِ كُلِّ سَاعَةٍ بَيْنَ الكَلِيَّاتِ.
+29. **الدعم الفني (IT Support):** لِإِعَادَةِ ضَبْطِ كَلِمَةِ المُرُورِ أَوْ حَلِّ مَشَاكِلِ البَوَّابَةِ، يَرْجَى فَتْحُ تَذْكَرَةِ دَعْمٍ.
+30. **السجل الأكاديمي (Transcript):** يُمْكِنُ طَلَبُ نُسْخَةٍ رَسْمِيَّةٍ مَخْتُومَةٍ عَبْرَ البَوَّابَةِ أَوْ عِمَادَةِ القَبُولِ وَالتَّسْجِيلِ.
 
 ## 2. قواعد باللغة الإنجليزية (English Rules)
 1. **Registration Period:** Starts two weeks before the semester begins.
@@ -43,3 +53,13 @@
 18. **Second Class Honors:** GPA between 3.75 and 3.89.
 19. **Office Hours:** Dedicated times to meet professors in their offices.
 20. **Transferring Majors:** Available after the first semester based on GPA.
+21. **Financial Aid:** A monthly allowance is given to active students with a GPA above 2.0. Emergency loans are available.
+22. **Student Housing:** Available for out-of-town students based on vacancy.
+23. **University ID:** Mandatory for campus entry. Replacements can be requested from Student Affairs for a nominal fee.
+24. **Medical Excuses:** Accepted only from the university clinic or a public hospital within 3 days of absence.
+25. **Student Clubs:** Registration for cultural and sports clubs is available at the start of each semester via the portal.
+26. **Special Needs Support:** Special committees and extra exam time are provided upon submitting an approved medical report.
+27. **Central Library:** Undergraduates can borrow up to 5 books for two weeks.
+28. **University Transport:** Free shuttle buses run at the top of every hour between colleges.
+29. **IT Support:** To reset passwords or fix portal issues, please open a support ticket.
+30. **Transcript Request:** Official stamped transcripts can be requested via the portal or the Admission Deanship.

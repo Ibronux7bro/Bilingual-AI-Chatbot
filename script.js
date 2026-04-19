@@ -246,3 +246,55 @@ function addBubble(text, type) {
     chatContainer.appendChild(bubble);
     chatContainer.scrollTop = chatContainer.scrollHeight;
 }
+
+function triggerService(text) {
+    primeSpeech();
+    processQuery(text);
+}
+
+// view switching logic
+let kbLoaded = false;
+async function switchView(view) {
+    const kbView = document.getElementById('kbView');
+    const chatContainer = document.getElementById('chatContainer');
+    const quickActions = document.getElementById('quickActions');
+    const inputSection = document.querySelector('.input-container');
+    const visualizer = document.querySelector('.interaction-center');
+    const typingInd = document.getElementById('typingIndicator');
+    
+    const navBtnChat = document.getElementById('navBtnChat');
+    const navBtnKb = document.getElementById('navBtnKb');
+
+    if (view === 'chat') {
+        kbView.style.display = 'none';
+        chatContainer.style.display = 'flex';
+        quickActions.style.display = 'flex';
+        inputSection.style.display = 'flex';
+        visualizer.style.display = 'flex';
+        
+        navBtnChat.classList.add('active');
+        navBtnKb.classList.remove('active');
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+    } else {
+        kbView.style.display = 'flex';
+        chatContainer.style.display = 'none';
+        quickActions.style.display = 'none';
+        inputSection.style.display = 'none';
+        visualizer.style.display = 'none';
+        typingInd.style.display = 'none';
+        
+        navBtnKb.classList.add('active');
+        navBtnChat.classList.remove('active');
+
+        if (!kbLoaded) {
+            try {
+                const res = await fetch('knowledge_base.txt');
+                const text = await res.text();
+                document.getElementById('kbContentBody').textContent = text;
+                kbLoaded = true;
+            } catch (e) {
+                document.getElementById('kbContentBody').textContent = "Failed to load Knowledge Base: " + e.message;
+            }
+        }
+    }
+}
