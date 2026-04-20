@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="AI Academic Advisor - Your smart companion for educational guidance.">
     <title>مهره وفاطمه | المستشار الأكاديمي الذكي</title>
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Cairo:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Custom Style -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="rtl">
     <div class="background-overlay"></div>
     <div class="glow-container">
@@ -24,17 +28,17 @@
         <div class="glow-orb orb-2"></div>
         <div class="glow-orb orb-3"></div>
     </div>
-    
+
     <div class="app-container">
         <aside class="sidebar">
             <div class="logo-section">
-                <img src="logo.png" alt="AI Logo" class="logo-img">
+                <img src="logo.png" alt="IMC Logo" class="logo-img">
                 <div class="logo-text">
-                    <h1>مهره وفاطمه</h1>
-                    <p>Academic Advisor</p>
+                    <h1>المستشار الذكي</h1>
+                    <p>للشريعة والقانون (IMC)</p>
                 </div>
             </div>
-            
+
             <nav class="side-nav">
                 <div class="nav-item active" id="navBtnChat" onclick="switchView('chat')">
                     <i class="fas fa-comment-dots"></i>
@@ -53,7 +57,21 @@
                     <button id="enBtn">English</button>
                 </div>
             </div>
-            
+
+            <div class="team-section">
+                <div class="team-header">
+                    <i class="fas fa-users"></i>
+                    <p>فريق العمل المطور</p>
+                </div>
+                <ul class="team-list">
+                    <li>شيخه محمد الخالدي</li>
+                    <li>سيف حسن المرزوقي </li>
+                    <li>مهره غانم نصيب</li>
+                    <li>فاطمه علي البلوشي</li>
+                    <li>عاشه خالد</li>
+                </ul>
+            </div>
+
             <footer class="sidebar-footer">
                 <p>&copy; 2026 AI Project</p>
             </footer>
@@ -62,9 +80,11 @@
         <main class="chat-wrapper">
             <header class="chat-header">
                 <div class="advisor-info">
+                    <button class="icon-btn" id="sidebarToggle" onclick="toggleSidebar()"
+                        style="margin-inline-end: 15px; color: var(--primary);"><i class="fas fa-bars"></i></button>
                     <div class="status-indicator"></div>
                     <div class="names">
-                        <h2 id="headerTitle">المستشار مهره وفاطمه</h2>
+                        <h2 id="headerTitle">المستشار الذكي</h2>
                         <span id="headerStatus">متصل الآن</span>
                     </div>
                 </div>
@@ -89,10 +109,16 @@
                 <div class="message ai-bubble">
                     <div class="avatar">M✿F</div>
                     <div class="bubble-content">
-                        <p class="ar-text">مرحباً بك! نحن "مهره غانم نصيب" و "فاطمه علي البلوشي"، مستشارك الأكاديمي الذكي. كيف يمكننا مساعدتك برحلتك التعليمية اليوم؟</p>
-                        <p class="en-text" style="display: none;">Welcome! We are "Mahra Ghanem Naseeb" and "Fatima Ali Al Balushi", your AI Academic Advisors. How can we assist you with your educational journey today?</p>
+                        <p class="ar-text">مرحباً بك! أنا مستشارك الأكاديمي الذكي الخاص بكلية الإمام مالك، تم تطويري
+                            باحترافية بواسطة فريق العمل: شيخه، سيف، مهره، فاطمه، وعاشه. كيف يمكنني مساعدتك برحلتك
+                            التعليمية اليوم؟</p>
+                        <p class="en-text" style="display: none;">Welcome! I am your IMC AI Academic Advisor,
+                            professionally developed by: Shaikha, Saif, Mahra, Fatima, and Aysha. How can I assist you
+                            with your educational journey today?</p>
                         <div class="bubble-footer">
-                            <button class="bubble-speak" onclick="playVoice(currentLang === 'ar-SA' ? 'مرحباً بك! نحن مهره غانم نصيب و فاطمه علي البلوشي، مستشارك الأكاديمي الذكي. كيف يمكننا مساعدتك برحلتك التعليمية اليوم؟' : 'Welcome! We are Mahra Ghanem Naseeb and Fatima Ali Al Balushi, your AI Academic Advisors. How can we assist you with your educational journey today?')"><i class="fas fa-volume-up"></i></button>
+                            <button class="bubble-speak"
+                                onclick="playVoice(currentLang === 'ar-SA' ? 'مرحباً بك! أنا مستشارك الأكاديمي الذكي، تم تطويري بواسطة فريق العمل: شيخه، سيف، مهره، فاطمه، وعاشه. كيف يمكنني مساعدتك برحلتك التعليمية اليوم؟' : 'Welcome! I am your AI Academic Advisor, developed by: Shaikha, Saif, Mahra, Fatima, and Aysha. How can I assist you with your educational journey today?')"><i
+                                    class="fas fa-volume-up"></i></button>
                             <span class="time">01:43 AM</span>
                         </div>
                     </div>
@@ -116,19 +142,23 @@
 
             <footer class="chat-input-section">
                 <div class="quick-actions" id="quickActions">
-                    <button class="action-btn" onclick="triggerService(currentLang === 'ar-SA' ? 'احسب معدلي المحتمل هذا الفصل' : 'Calculate my likely GPA this semester')">
+                    <button class="action-btn"
+                        onclick="triggerService(currentLang === 'ar-SA' ? 'احسب معدلي المحتمل هذا الفصل' : 'Calculate my likely GPA this semester')">
                         <span class="ar-text">احسب معدلي 🧮</span>
                         <span class="en-text" style="display: none;">Calculate GPA 🧮</span>
                     </button>
-                    <button class="action-btn" onclick="triggerService(currentLang === 'ar-SA' ? 'أريد حجز موعد مع مرشد أكاديمي' : 'I want to book an appointment with an academic advisor')">
+                    <button class="action-btn"
+                        onclick="triggerService(currentLang === 'ar-SA' ? 'أريد حجز موعد مع مرشد أكاديمي' : 'I want to book an appointment with an academic advisor')">
                         <span class="ar-text">حجز موعد 📅</span>
                         <span class="en-text" style="display: none;">Book Appt 📅</span>
                     </button>
-                    <button class="action-btn" onclick="triggerService(currentLang === 'ar-SA' ? 'ما هي المكافآت المالية ولوائح السكن؟' : 'What are the financial rewards and housing regulations?')">
+                    <button class="action-btn"
+                        onclick="triggerService(currentLang === 'ar-SA' ? 'ما هي المكافآت المالية ولوائح السكن؟' : 'What are the financial rewards and housing regulations?')">
                         <span class="ar-text">مكافآت وسكن 🏠</span>
                         <span class="en-text" style="display: none;">Housing & Aid 🏠</span>
                     </button>
-                    <button class="action-btn" onclick="triggerService(currentLang === 'ar-SA' ? 'أواجه مشكلة تقنية، أريد فتح تذكرة دعم' : 'I am facing a technical issue, I want to open a support ticket')">
+                    <button class="action-btn"
+                        onclick="triggerService(currentLang === 'ar-SA' ? 'أواجه مشكلة تقنية، أريد فتح تذكرة دعم' : 'I am facing a technical issue, I want to open a support ticket')">
                         <span class="ar-text">دعم فني 🛠️</span>
                         <span class="en-text" style="display: none;">IT Support 🛠️</span>
                     </button>
@@ -148,4 +178,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

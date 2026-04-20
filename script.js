@@ -28,7 +28,7 @@ arBtn.onclick = () => {
     enBtn.classList.remove('active');
     
     // Update UI Text (Arabic)
-    headerTitle.innerText = "المستشار مهره وفاطمه";
+    headerTitle.innerText = "المستشار الذكي";
     headerStatus.innerText = "متصل الآن";
     statusTxt.innerText = "انقر على الميكروفون للتحدث";
     manualInput.placeholder = "اكتب سؤالك هنا...";
@@ -48,7 +48,7 @@ enBtn.onclick = () => {
     arBtn.classList.remove('active');
     
     // Update UI Text (English)
-    headerTitle.innerText = "Mahra & Fatima Advisor";
+    headerTitle.innerText = "IMC Smart Advisor";
     headerStatus.innerText = "Online";
     statusTxt.innerText = "Click the microphone to speak";
     manualInput.placeholder = "Type your question here...";
@@ -308,4 +308,10 @@ async function switchView(view) {
             }
         }
     }
+}
+
+// Sidebar Toggle Logic
+function toggleSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('collapsed');
 }
