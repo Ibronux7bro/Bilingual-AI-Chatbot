@@ -31,6 +31,10 @@
 28. **النقل الجامعي (University Transport):** حَافِلَاتٌ مَجَّانِيَّةٌ تَنْطَلِقُ عَلَى رَأْسِ كُلِّ سَاعَةٍ بَيْنَ الكَلِيَّاتِ.
 29. **الدعم الفني (IT Support):** لِإِعَادَةِ ضَبْطِ كَلِمَةِ المُرُورِ أَوْ حَلِّ مَشَاكِلِ البَوَّابَةِ، يَرْجَى فَتْحُ تَذْكَرَةِ دَعْمٍ.
 30. **السجل الأكاديمي (Transcript):** يُمْكِنُ طَلَبُ نُسْخَةٍ رَسْمِيَّةٍ مَخْتُومَةٍ عَبْرَ البَوَّابَةِ أَوْ عِمَادَةِ القَبُولِ وَالتَّسْجِيلِ.
+31. **خدمة حساب المعدل (GPA Service):** لِحِسَابِ مُعَدَّلِكَ المُتَوَقَّعِ، يُرْجَى مَدِّنا بِالمَوَادِّ وَالدَّرَجَاتِ المُتَوَقَّعَةِ لِنَقُومَ بِحِسَابِهَا فَوراً لَكَ تِفَاعُلِياً.
+32. **خدمة حجز موعد (Academic Appointment):** لِحَجْزِ مَوْعِدٍ مَعَ مُرْشِدِكَ الأَكَادِيمِيِّ، يَرْجَى تَزْوِيدُنَا بِرَقَمِكَ الجَامِعِيِّ وَالوَقْتِ المُنَاسِبِ لَكَ خِلَالَ أَوْقَاتِ الدَّوَامِ الرَّسْمِيِّ.
+33. **خدمة الدعم الفني (Technical Support):** إِذَا كُنْتَ تِوَاجِهُ ضُعْفاً فِي البَوَّابَةِ أَوْ خَطَأً تِقْنِيّاً، زَوِّدْنَا بِرَقَمِكَ الجَامِعِيِّ وَوَصْفٍ لِلْمُشْكِلَةِ لِنَقُومَ بِإِصْدَارِ تَذْكَرَةِ دَعْمٍ لَكَ.
+34. **خدمة المكافآت والسكن (Housing & Aid Service):** لِتَقْيِيمِ حَالَتِكَ المَالِيَّةِ وَأَهْلِيَّتِكَ لِلسَّكَنِ، يُرْجَى إِعْطَائُنَا رَقَمَكَ الجَامِعِيَّ لِلْبَحْثِ فِي سِجِلاتِ العِمَادَةِ بِالذَّكَاءِ الاِصْطِنَاعِيِّ.
 
 ## 2. قواعد باللغة الإنجليزية (English Rules)
 1. **Registration Period:** Starts two weeks before the semester begins.
@@ -63,3 +67,7 @@
 28. **University Transport:** Free shuttle buses run at the top of every hour between colleges.
 29. **IT Support:** To reset passwords or fix portal issues, please open a support ticket.
 30. **Transcript Request:** Official stamped transcripts can be requested via the portal or the Admission Deanship.
+31. **GPA Calculation Service:** To calculate your expected GPA, please provide your courses and expected grades, and we will calculate it for you interactively.
+32. **Academic Appointment Service:** To book an appointment with your academic advisor, please provide your University ID and preferred time during official working hours.
+33. **Technical Support Service:** If you are facing a portal issue or technical error, provide your University ID and a description of the problem so we can issue a support ticket.
+34. **Housing & Financial Aid Service:** We provide an AI assessment of your financial status and housing eligibility. Please provide your University ID to check Deanship records.
