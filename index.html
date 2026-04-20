@@ -116,10 +116,22 @@
 
             <footer class="chat-input-section">
                 <div class="quick-actions" id="quickActions">
-                    <button class="action-btn" onclick="triggerService('احسب معدلي المحتمل هذا الفصل')">احسب معدلي 🧮</button>
-                    <button class="action-btn" onclick="triggerService('أريد حجز موعد مع مرشد أكاديمي')">حجز موعد 📅</button>
-                    <button class="action-btn" onclick="triggerService('ما هي المكافآت المالية ولوائح السكن؟')">مكافآت وسكن 🏠</button>
-                    <button class="action-btn" onclick="triggerService('أواجه مشكلة تقنية، أريد فتح تذكرة دعم')">دعم فني 🛠️</button>
+                    <button class="action-btn" onclick="triggerService(currentLang === 'ar-SA' ? 'احسب معدلي المحتمل هذا الفصل' : 'Calculate my likely GPA this semester')">
+                        <span class="ar-text">احسب معدلي 🧮</span>
+                        <span class="en-text" style="display: none;">Calculate GPA 🧮</span>
+                    </button>
+                    <button class="action-btn" onclick="triggerService(currentLang === 'ar-SA' ? 'أريد حجز موعد مع مرشد أكاديمي' : 'I want to book an appointment with an academic advisor')">
+                        <span class="ar-text">حجز موعد 📅</span>
+                        <span class="en-text" style="display: none;">Book Appt 📅</span>
+                    </button>
+                    <button class="action-btn" onclick="triggerService(currentLang === 'ar-SA' ? 'ما هي المكافآت المالية ولوائح السكن؟' : 'What are the financial rewards and housing regulations?')">
+                        <span class="ar-text">مكافآت وسكن 🏠</span>
+                        <span class="en-text" style="display: none;">Housing & Aid 🏠</span>
+                    </button>
+                    <button class="action-btn" onclick="triggerService(currentLang === 'ar-SA' ? 'أواجه مشكلة تقنية، أريد فتح تذكرة دعم' : 'I am facing a technical issue, I want to open a support ticket')">
+                        <span class="ar-text">دعم فني 🛠️</span>
+                        <span class="en-text" style="display: none;">IT Support 🛠️</span>
+                    </button>
                 </div>
                 <div class="input-container">
                     <button id="micBtn" class="mic-btn" title="تحدث">
