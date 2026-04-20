@@ -5,7 +5,8 @@ from dotenv import load_dotenv
 import os
 import base64
 from io import BytesIO
-from gtts import gTTS
+import asyncio
+import edge_tts
 
 load_dotenv()
 
@@ -36,7 +37,7 @@ def chat():
 
     # System instructions
     system_instructions = (
-        "You are 'Samer', a professional and friendly AI Academic Advisor. "
+        "You are 'Mahra and Fatima', a professional and friendly AI Academic Advisor team. "
         "YOUR PURPOSE IS STRICTLY ACADEMIC ADVISING ONLY. "
         f"\nKnowledge Base Content (The Golden Rules):\n{KB_CONTENT}\n"
         "\nOPERATIONAL RULES:\n"
@@ -48,7 +49,7 @@ def chat():
         "\nINTERACTIVE SERVICES MOCKING:\n"
         "If a user asks for a service like calculating GPA (حساب المعدل), booking an appointment (حجز موعد), or opening a support ticket (فتح تذكرة دعم فني), you must act as an interactive agent. Ask them for the required details one by one (e.g. Student ID, courses, problem description). Once they provide the info, simulate the process and tell them it was successfully done."
     )
-    prompt = f"{system_instructions}\n\nUser Question: {user_input}\nAdvisor Samer's Response:"
+    prompt = f"{system_instructions}\n\nUser Question: {user_input}\nAdvisor Mahra and Fatima's Response:"
 
     # Try different models in case of quota/availability issues
     models_to_try = ["gemini-1.5-flash", "gemini-pro"]
@@ -107,11 +108,18 @@ def tts_generate():
         return jsonify({"error": "No text"}), 400
         
     try:
-        tts = gTTS(text=text, lang=lang)
-        fp = BytesIO()
-        tts.write_to_fp(fp)
-        fp.seek(0)
-        audio_b64 = base64.b64encode(fp.read()).decode('utf-8')
+        voice = "ar-AE-FatimaNeural" if lang == "ar" else "en-US-AvaNeural"
+        
+        async def generate_speech():
+            communicate = edge_tts.Communicate(text, voice)
+            audio_data = b""
+            async for chunk in communicate.stream():
+                if chunk["type"] == "audio":
+                    audio_data += chunk["data"]
+            return audio_data
+            
+        audio_bytes = asyncio.run(generate_speech())
+        audio_b64 = base64.b64encode(audio_bytes).decode('utf-8')
         return jsonify({"audio": audio_b64})
     except Exception as e:
         return jsonify({"error": str(e)}), 500

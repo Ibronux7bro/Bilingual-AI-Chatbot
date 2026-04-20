@@ -28,13 +28,13 @@ arBtn.onclick = () => {
     enBtn.classList.remove('active');
     
     // Update UI Text (Arabic)
-    headerTitle.innerText = "المستشار سامر";
+    headerTitle.innerText = "المستشار مهره وفاطمه";
     headerStatus.innerText = "متصل الآن";
     statusTxt.innerText = "انقر على الميكروفون للتحدث";
     manualInput.placeholder = "اكتب سؤالك هنا...";
     navChat.innerText = "المحادثة المباشرة";
     navKb.innerText = "قاعدة المعرفة";
-    typingText.innerText = "سامر يفكر...";
+    typingText.innerText = "جاري التفكير...";
     
     toggleLanguageVisibility('ar');
 };
@@ -48,13 +48,13 @@ enBtn.onclick = () => {
     arBtn.classList.remove('active');
     
     // Update UI Text (English)
-    headerTitle.innerText = "Samer AI Advisor";
+    headerTitle.innerText = "Mahra & Fatima Advisor";
     headerStatus.innerText = "Online";
     statusTxt.innerText = "Click the microphone to speak";
     manualInput.placeholder = "Type your question here...";
     navChat.innerText = "Live Chat";
     navKb.innerText = "Knowledge Base";
-    typingText.innerText = "Samer is analyzing...";
+    typingText.innerText = "Analyzing...";
     
     toggleLanguageVisibility('en');
 };
@@ -229,7 +229,7 @@ function addBubble(text, type) {
     const bubble = document.createElement('div');
     bubble.className = `message ${type}-bubble`;
     
-    const avatarChar = type === 'ai' ? 'S' : 'U';
+    const avatarChar = type === 'ai' ? 'M✿F' : 'U';
     const speakBtn = type === 'ai' ? `<button class="bubble-speak" onclick="playVoice(\`${text.replace(/`/g, '\\`').replace(/\n/g, ' ')}\`)"><i class="fas fa-volume-up"></i></button>` : '';
 
     bubble.innerHTML = `
@@ -290,7 +290,18 @@ async function switchView(view) {
             try {
                 const res = await fetch('knowledge_base.txt');
                 const text = await res.text();
-                document.getElementById('kbContentBody').textContent = text;
+                
+                // Simple markdown parser
+                let html = text
+                    .replace(/^# (.*$)/gim, '<h1>$1</h1>')
+                    .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                    .replace(/^\d+\.\s*(.*$)/gim, '<li>$1</li>');
+                    
+                // Wrap lists
+                html = html.replace(/(<li>.*<\/li>\n?)+/gim, match => `<ul class="kb-list">${match}</ul>`);
+                
+                document.getElementById('kbContentBody').innerHTML = html;
                 kbLoaded = true;
             } catch (e) {
                 document.getElementById('kbContentBody').textContent = "Failed to load Knowledge Base: " + e.message;
